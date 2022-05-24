@@ -92,8 +92,6 @@ img{
 }
 
 #main-content{
-    max-width:60em;
-    margin:auto;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -138,7 +136,7 @@ img{
     display:flex;
     justify-content: space-around;
     align-items: center;
-    max-width:42em;
+    width:35em;
     margin:30px 0;
 }
 
@@ -149,7 +147,7 @@ img{
 }
 
 .myskills-text-area{
-    width:30vw;
+    width:20em;
     line-height: 1.5;
 }
 
@@ -164,12 +162,19 @@ img{
     padding:50px 0;
 }
 
-@media (max-width:450px) {
+/* Mobile */
+
+@media screen and (max-width:450px) {
+
+    
+
+    /* midde-section */
+
     .myskills-flex-area{
         flex-direction: column;
+        width:auto;
     }
     .myskills-text-area{
-        width:100%;
         text-align:center;
         order:2;
     }
@@ -181,6 +186,8 @@ img{
     .chilli-img{
         order:1;
     }
+
+    /* Header area / Nuvem */
 
     .nuvem{
         position:absolute;
