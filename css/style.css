@@ -1,0 +1,165 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing:border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+:root{
+    --primary-color: #66BFBF;
+    --secundary-color:#11999E;
+    --text-color:#40514E;
+}
+
+body{
+    margin-bottom:100px;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+#main-header{
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    height:95vh;
+    background:#EAF6F6 url(../img/mountain.png);
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    margin-bottom:45px;
+    padding:70px;
+}
+
+.header-title{
+    padding-top:70px;
+}
+
+.header-subtitle{
+    color:var(--primary-color);
+    font-size:32px;
+    font-weight: normal;
+    position:relative;
+}
+
+.header-subtitle::after{
+    content: "";
+    width:45px;
+    height:3px;
+    display:block;
+    position:absolute;
+    top:30px;
+    left:27px;
+    background-color:var(--primary-color);
+}
+
+.top-section img{
+    border-radius:50%;
+    width:200px;
+    height:200px
+}
+
+.top-section{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width:60vh;
+    text-align:center;
+}
+
+.top-section::after{
+    content:"";
+    display:block;
+    width:50px;
+    height:3px;
+    border-bottom:6px dotted #b0b0b0;
+    margin:40px auto;
+}
+
+.top-section h2{
+    color:var(--primary-color);
+    padding:1em;
+    font-size:34px;
+}
+
+.top-section p{
+    line-height: 1.5;
+    font-weight: 500;
+    color:var(--text-color)
+}
+
+#main-content{
+    width:960px;
+    margin:auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+}
+
+.nuvem{
+    position:absolute;
+    top:0;
+    left:0;
+}
+
+.cloud-right{
+    left:1000px;
+    top:50px;
+}
+
+.cloud-left{
+    left:250px;
+    top:200px;
+}
+
+/* midde-section */
+
+.midde-section{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.midde-section::after{
+    content:"";
+    display:block;
+    width:50px;
+    height:3px;
+    border-bottom:6px dotted #b0b0b0;
+    margin:40px auto;
+}
+
+.myskills-flex-area{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    width:42em;
+    margin:30px 0;
+}
+
+.myskills-img{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+}
+
+.myskills-text-area{
+    width:30vw;
+    line-height: 1.5;
+}
+
+.myskills-text-area h3{
+    color:var(--secundary-color);
+    padding-bottom:10px;
+}
+
+.midde-section h2{
+    color:var(--primary-color);
+    font-size:34px;
+    padding:50px 0;
+}
