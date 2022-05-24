@@ -35,6 +35,7 @@ img{
 
 .header-title{
     padding-top:70px;
+    animation:fade 500ms ease-in-out;
 }
 
 .header-subtitle{
@@ -42,6 +43,7 @@ img{
     font-size:32px;
     font-weight: normal;
     position:relative;
+    animation:fade 3s;
 }
 
 .header-subtitle::after{
@@ -107,11 +109,15 @@ img{
 .cloud-right{
     left:1000px;
     top:50px;
+    animation: move-right 2s;
+    animation-iteration-count: 1;
 }
 
 .cloud-left{
     left:250px;
     top:200px;
+    animation: move-left 2s;
+    animation-iteration-count: 1;
 }
 
 /* midde-section */
@@ -162,6 +168,37 @@ img{
     padding:50px 0;
 }
 
+/* CSS animation */
+
+@keyframes move-right {
+    from{
+        transform: translateX(70%);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+@keyframes move-left {
+    from{
+        transform: translateX(-70%);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+@keyframes fade{
+   from{
+       opacity:0;
+       transform:scale(0.9);
+   }
+   to{
+       opacity:1;
+       transform: scale(1);
+   }
+}
+
 /* Mobile */
 
 @media screen and (max-width:450px) {
@@ -198,10 +235,12 @@ img{
     .cloud-right{
         left:250px;
         top:10px;
+        
     }
     
     .cloud-left{
         left:10px;
-        top:80px;
+        top:170px;
+        
     }
 }
