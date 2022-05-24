@@ -235,7 +235,7 @@ a{
     
     .cloud-left{
         left:10px;
-        top:170px;
+        top:250px;
         animation: move-left 2s;
         animation-iteration-count: 1;
     }
