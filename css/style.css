@@ -57,7 +57,7 @@ img{
 
 .top-section img{
     border-radius:50%;
-    width:200px;
+    max-width:200px;
     height:200px
 }
 
@@ -66,7 +66,7 @@ img{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width:60vh;
+    max-width:60vh;
     text-align:center;
 }
 
@@ -92,7 +92,7 @@ img{
 }
 
 #main-content{
-    width:960px;
+    max-width:60em;
     margin:auto;
     display:flex;
     justify-content: center;
@@ -138,7 +138,7 @@ img{
     display:flex;
     justify-content: space-around;
     align-items: center;
-    width:42em;
+    max-width:42em;
     margin:30px 0;
 }
 
@@ -162,4 +162,39 @@ img{
     color:var(--primary-color);
     font-size:34px;
     padding:50px 0;
+}
+
+@media (max-width:450px) {
+    .myskills-flex-area{
+        flex-direction: column;
+    }
+    .myskills-text-area{
+        width:100%;
+        text-align:center;
+        order:2;
+    }
+
+    .myskills-img{
+        margin-bottom:30px;
+    }
+
+    .chilli-img{
+        order:1;
+    }
+
+    .nuvem{
+        position:absolute;
+        top:0;
+        left:0;
+    }
+    
+    .cloud-right{
+        left:250px;
+        top:10px;
+    }
+    
+    .cloud-left{
+        left:10px;
+        top:80px;
+    }
 }
