@@ -128,9 +128,10 @@ a{
 
 .midde-section{
     display:flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     flex-direction: column;
+    max-width:64em;
 }
 
 .midde-section::after{
@@ -146,7 +147,6 @@ a{
     display:flex;
     justify-content: space-around;
     align-items: center;
-    width:35em;
     margin:30px 0;
 }
 
@@ -157,7 +157,8 @@ a{
 }
 
 .myskills-text-area{
-    width:20em;
+    max-width:30em;
+    margin:0 30px;
     line-height: 1.5;
 }
 
@@ -181,6 +182,7 @@ a{
 .footer-ul li a{
     color:var(--secundary-color);
     padding:10px;
+    font-weight: 700;
 }
 
 .footer-ul li{
@@ -193,6 +195,54 @@ a{
     font-style: italic;
 }
 
+/* Get in touch AREA */
+
+.get-touch{
+    line-height: 3;
+    text-align:center;
+    margin-bottom:100px;
+}
+
+.get-touch h2{
+    color:var(--primary-color);
+    font-size:36px;
+    font-weight: 500;
+}
+
+.get-touch h3{
+    color:var(--secundary-color);
+    font-size:18px;
+}
+
+.btn {
+    background: #66BFBF;
+    background-image: -webkit-linear-gradient(top, #66BFBF, #11999E);
+    background-image: -moz-linear-gradient(top, #66BFBF, #11999E);
+    background-image: -ms-linear-gradient(top, #66BFBF, #11999E);
+    background-image: -o-linear-gradient(top, #66BFBF, #11999E);
+    background-image: linear-gradient(to bottom, #66BFBF, #11999E);
+    -webkit-border-radius: 10;
+    -moz-border-radius: 10;
+    border-radius: 10px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    border:none;
+    cursor:pointer;
+  }
+  
+  .btn:hover {
+    background: #3cb0fd;
+    background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+    text-decoration: none;
+  }
+
 /* Mobile */
 
 @media screen and (max-width:450px) {
@@ -200,6 +250,10 @@ a{
     
 
     /* midde-section */
+
+    .midde-section{
+        width:auto;
+    }
 
     .myskills-flex-area{
         flex-direction: column;
