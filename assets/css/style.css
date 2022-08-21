@@ -443,8 +443,15 @@ ul {
 
     .hero-area-rect {
         left: 0;
-        top: -100px;
+        top: -80px;
         width: 450px;
+    }
+
+    .hero-area-title{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .programming-guy-img {
