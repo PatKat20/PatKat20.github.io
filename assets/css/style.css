@@ -116,7 +116,7 @@ ul {
 .hero-area-rect {
     position: absolute;
     top: -100px;
-    left: 435px;
+    left: 420px;
     z-index: -1;
     animation: squareAnimationRight 2s;
 }
@@ -440,7 +440,7 @@ ul {
     .label{
         text-align:center;
     }
-    
+
     .hero-area-rect {
         left: 0;
         top: -100px;
