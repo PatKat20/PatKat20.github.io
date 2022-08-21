@@ -5,71 +5,195 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>.: PatKat :.</title>
-    <link rel="stylesheet" href="css/style.css">
-     <!-- Fonts -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;500;700;900&display=swap"
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- RESET CSS -->
+    <link rel="stylesheet" href="/assets/css/normalize.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css"">
+    <title>Patrick F.</title>
 </head>
 
 <body>
-    <header id="main-header">
-        <div class="nuvem cloud-right">
-            <img src="img/cloud.png" alt="">
+    <header id=" header">
+    <nav id="header__navigation" class="navbar navbar-expand-lg">
+        <div class="pageTitle">
+            <img src="/assets//img/Patrick F..svg" alt="Logo Imagem">
         </div>
-        <div class="nuvem cloud-left">
-            <img src="img/cloud.png" alt="">
+        <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul id="header__navigation_ul" class="header-ul navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a href="#" class="">
+                        Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#sobre-mim-section">
+                        Sobre mim
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects">
+                        Projetos
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#tecnologias-section">
+                        Tecnologias
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#footer">
+                        Redes Sociais
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contatos">
+                        Contato
+                    </a>
+                </li>
+            </ul>
         </div>
-        <img src="img/Impatkat.png" alt="" class="header-title">
-        <h2 class="header-subtitle">a <span>pro</span>grammer.</h2>
+    </nav>
     </header>
-    <main id="main-content">
-        <section class="top-section">
-            <img src="img/def501h-97142a80-5b9d-4c43-85e7-7cc60821c4ee.png"
-                alt="Imagem logo de uma garota fazendo sinal de paz e amor">
-            <h2>Hello.</h2>
-            <p>I am an Web Developer and a Student of Analisys and Dev of System. Currently studying front-end with JavaScript, HTML and CSS. I love
-                stay in home and keep warm.</p>
-        </section>
+    <main id="main">
 
-        <section class="midde-section">
-            <h2>My Skills.</h2>
-            <div class="myskills-flex-area">
-                <img src="img/computer.png" alt="Imagem de um notebook com fundo vermelho" class="myskills-img">
-                <div class="myskills-text-area">
-                    <h3>Design & Development</h3>
-                    <p>I started learning to code when i was 13 old because i wanted to create a game from my own. Over
-                        time i have gained an interest in programming and making stuffs work</p>
+        <section id="hero-section">
+            <div class="hero-area-content">
+                <img src="/assets/img/Programming-guy.svg" alt="" class="programming-guy-img">
+                <div class="hero-area-title">
+                    <img src="/assets/img/Rectangle 3.jpg" alt="" class="hero-area-rect">
+                    <h1 id="hero-section__title">Oi,<br> Eu sou <strong> Patrick! </strong></h1>
+                    <p>Um desenvolvedor front-end</p>
+                    <a href="#contatos" class="hero-btn">Me contate</a>
                 </div>
             </div>
+        </section>
 
-            <div class="myskills-flex-area">
-                <div class="myskills-text-area">
-                    <h3>Hot Wings Challenge</h3>
-                    <p>I started learning to code when i was 13 old because i wanted to create a game from my own. Over
-                        time i have gained an interest in programming and making stuffs work</p>
-                </div>
-                <img src="img/chillies.png" alt="Imagem de um notebook com fundo vermelho" class="myskills-img chilli-img">
+        <section id="sobre-mim-section">
+            <p class="label">sobre mim</p>
+            <div class="sobre-mim-content row">
+                <img src="/assets/img/boy.svg" alt="" width="496px" class="col-md-6">
+                <p class="sobre-mim-content-text col-md-6 d-flex align-items-center">Olá, meu nome é Patrick e eu sou um
+                    desenvolvedor front-end.
+                    Minhas habilidades estão centralizadas em HTML, CSS, JavaScript e React.js. Atualmente estou
+                    cursando Análise e Desenvolvimento de sistemas pela UNIDOMBOSCO, também estou em constante
+                    aprendizado e procuro me manter constante nos estudos diariamente.
+                </p>
             </div>
         </section>
-        <section class="get-touch">
-            <h2>Get in touch</h2>
-            <h3>Have you been interested in anything above?</h3>
-            <p>If you liked so:</p>
-            <button class="btn">Contact Me</button>
+
+        <section id="projects">
+            <h3 class="label projects_title">Meus Projetos</h3>
+
+            <div class="card-area">
+                <div class="card-content">
+                    <img src="/assets/cards/project.svg" alt="" width="360px">
+                    <h4>InDecor Landing page</h4>
+                    <p> HTML5, CSS3, CSS Flexbox, Bootstrap</p>
+                    <a href="https://patkat-indecor.herokuapp.com/" class="card-content-button">Veja o Projeto</a>
+                </div>
+
+                <div class="card-content">
+                    <img src="/assets/cards/Instagram.svg" alt="" width="360px">
+                    <h4>Instagram Login Page</h4>
+                    <p> HTML5, CSS3, CSS Flexbox </p>
+                    <a href="https://patkat20.github.io/Instagram-loginpage-clone/" class="card-content-button">Veja o
+                        Projeto</a>
+                </div>
+
+                <div class="card-content">
+                    <img src="/assets/cards/CRUD.svg" alt="" width="360px">
+                    <h4>CRUD - PHP</h4>
+                    <p> HTML5, CSS3, Materialize, PHP, MySQL </p>
+                    <a href="" class="card-content-button">Veja o Projeto</a>
+                </div>
+            </div>
         </section>
+
+
+        <section id="tecnologias-section">
+            <p class="label section-tecnologia-label">Tecnologias</p>
+            <h3 id="tecnologia_title">Tecnologias que já tive contato</h3>
+
+            <div class="card-area">
+                <img src="/assets/cards/HTML.svg" alt="" class="card">
+                <img src="/assets/cards/CSS.svg" alt="" class="card">
+                <img src="/assets/cards/JavaScript.svg" alt="" class="card">
+                <img src="/assets/cards/React.svg" alt="" class="card">
+                <img src="/assets/cards/Node.svg" alt="" class="card">
+                <img src="/assets/cards/Git.svg" alt="" class="card">
+                <img src="/assets/cards/Bootstrap.svg" alt="" class="card">
+                <img src="/assets/cards/MySQL.svg" alt="" class="card">
+            </div>
+        </section>
+
+        <section id="contatos">
+            <p class="label section-tecnologia-label">Entre em contato</p>
+            <div class="contato-content row d-flex align-items-center">
+                <img src="/assets/img/boy2.svg" alt="" class="col-lg-6 col-md-6">
+                <form action="" method="post" class="col-lg-5 col-md-6">
+                    <h3 class="form-title">Gostou? então entre em contato</h3>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Email address</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="Email@hotmail.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="textArea">textarea</label>
+                        <textarea class="form-control" id="textArea" rows="3" style="resize: none; height:275px;"
+                            placeholder="Olá eu gostaria de..."></textarea>
+                    </div>
+                    <button type="button" class="form-btn">Enviar</button>
+                </form>
+            </div>
+        </section>
+
     </main>
     <footer id="footer">
-        <ul class="footer-ul">
+        <p>Desenvolvido por <a href="https://github.com/PatKat20">@PatKat20</a></p>
+        <ul class="icons-list">
             <li>
-                <a href="#">Linkedin</a>
-                <a href="#">Twitter</a>
-                <a href="#">Website</a>
+                <a href="https://github.com/PatKat20">
+                    <ion-icon name="logo-github" id="github" class="icon"></ion-icon>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/patric_ddeus/">
+                    <ion-icon name="logo-instagram" id="instagram" class="icon"></ion-icon>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/patrick-de-deus-692b87204/">
+                    <ion-icon name="logo-linkedin" id="linkedin" class="icon"></ion-icon>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <ion-icon name="logo-twitter" id="twitter" class="icon"></ion-icon>
+                </a>
             </li>
         </ul>
-        <p class="footer-copy">&copy; 2018 PatKat.</p>
     </footer>
-</body>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </body>
 
 </html>
