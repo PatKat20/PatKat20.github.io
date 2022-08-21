@@ -437,8 +437,8 @@ ul {
 
 @media screen and (max-width:455px) {
 
-    .label{
-        text-align:center;
+    .label {
+        text-align: center;
     }
 
     .hero-area-rect {
@@ -449,6 +449,9 @@ ul {
 
     .programming-guy-img {
         display: none;
+        width: 0;
+        height: 0;
+        overflow: hidden;
     }
 
     .hero-area-content {
@@ -458,8 +461,15 @@ ul {
         align-items: center;
     }
 
+    .contato-content input,
+    #textArea,
+    .contato-content button {
+        width: 350px;
+        margin-left: -15px;
+    }
 
-    .card-area{
+
+    .card-area {
         justify-content: center;
     }
 }
