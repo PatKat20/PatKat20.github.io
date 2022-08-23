@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <!-- RESET CSS -->
-    <link rel="stylesheet" href="/assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/normalize.css">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,7 +27,7 @@
     <header id=" header">
         <nav id="header__navigation" class="navbar navbar-expand-lg">
             <div class="pageTitle">
-                <img src="/assets//img/Patrick F..svg" alt="Logo Imagem">
+                <img src="assets//img/Patrick F..svg" alt="Logo Imagem">
             </div>
             <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse"
                 data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -73,9 +73,9 @@
     <main id="main">
 
         <section id="hero-section">
-            <img src="/assets/img/Rectangle 3.jpg" alt="" class="hero-area-rect">
+            <img src="assets/img/Rectangle 3.jpg" alt="" class="hero-area-rect">
             <div class="hero-area-content">
-                <img src="/assets/img/Programming-guy.svg" alt="" class="programming-guy-img">
+                <img src="assets/img/Programming-guy.svg" alt="" class="programming-guy-img">
                 <div class="hero-area-title">
                     <h1 id="hero-section__title">Oi,<br> Eu sou <strong> Patrick! </strong></h1>
                     <p>Um desenvolvedor front-end</p>
@@ -87,7 +87,7 @@
         <section id="sobre-mim-section">
             <p class="label">sobre mim</p>
             <div class="sobre-mim-content row">
-                <img src="/assets/img/boy.svg" alt="" width="496px" class="col-md-6">
+                <img src="assets/img/boy.svg" alt="" width="496px" class="col-md-6">
                 <p class="sobre-mim-content-text col-md-6 d-flex align-items-center">Olá, meu nome é Patrick e eu sou um
                     desenvolvedor front-end.
                     Minhas habilidades estão centralizadas em HTML, CSS, JavaScript e React.js. Atualmente estou
@@ -102,14 +102,14 @@
 
             <div class="card-area-projetos">
                 <div class="card-content">
-                    <img src="/assets/cards/project.svg" alt="" width="360px">
+                    <img src="assets/cards/project.svg" alt="" width="360px">
                     <h4>InDecor Landing page</h4>
                     <p> HTML5, CSS3, CSS Flexbox, Bootstrap</p>
-                    <a href="https://patkat-indecor.herokuapp.com/" class="card-content-button">Veja o Projeto</a>
+                    <a href="https://patkat-indecor.herokuapp.com/" class="card-content-button">Veja o Projeto<a>
                 </div>
 
                 <div class="card-content">
-                    <img src="/assets/cards/Instagram.svg" alt="" width="360px">
+                    <img src="assets/cards/Instagram.svg" alt="" width="360px">
                     <h4>Instagram Login Page</h4>
                     <p> HTML5, CSS3, CSS Flexbox </p>
                     <a href="https://patkat20.github.io/Instagram-loginpage-clone/" class="card-content-button">Veja o
@@ -117,7 +117,7 @@
                 </div>
 
                 <div class="card-content">
-                    <img src="/assets/cards/CRUD.svg" alt="" width="360px">
+                    <img src="assets/cards/CRUD.svg" alt="" width="360px">
                     <h4>CRUD - PHP</h4>
                     <p> HTML5, CSS3, Materialize, PHP, MySQL </p>
                     <a href="" class="card-content-button">Veja o Projeto</a>
@@ -131,34 +131,39 @@
             <h3 id="tecnologia_title">Tecnologias que já tive contato</h3>
 
             <div class="card-area">
-                <img src="/assets/cards/HTML.svg" alt="" class="card">
-                <img src="/assets/cards/CSS.svg" alt="" class="card">
-                <img src="/assets/cards/JavaScript.svg" alt="" class="card">
-                <img src="/assets/cards/React.svg" alt="" class="card">
-                <img src="/assets/cards/Node.svg" alt="" class="card">
-                <img src="/assets/cards/Git.svg" alt="" class="card">
-                <img src="/assets/cards/Bootstrap.svg" alt="" class="card">
-                <img src="/assets/cards/MySQL.svg" alt="" class="card">
+                <img src="assets/cards/HTML.svg" alt="" class="card">
+                <img src="assets/cards/CSS.svg" alt="" class="card">
+                <img src="assets/cards/JavaScript.svg" alt="" class="card">
+                <img src="assets/cards/React.svg" alt="" class="card">
+                <img src="assets/cards/Node.svg" alt="" class="card">
+                <img src="assets/cards/Git.svg" alt="" class="card">
+                <img src="assets/cards/Bootstrap.svg" alt="" class="card">
+                <img src="assets/cards/MySQL.svg" alt="" class="card">
             </div>
         </section>
 
         <section id="contatos">
             <p class="label section-tecnologia-label">Entre em contato</p>
             <div class="contato-content row d-flex align-items-center">
-                <img src="/assets/img/boy2.svg" alt="" class="col-lg-6 col-md-6">
-                <form action="" method="post" class="col-lg-5 col-md-6">
+                <img src="assets/img/boy2.svg" alt="" class="col-lg-6 col-md-6">
+                <form action="https://formspree.io/f/xgeqvony" method="POST" class="col-lg-5 col-md-6">
                     <h3 class="form-title">Gostou? então entre em contato</h3>
                     <div class="form-group">
-                        <label for="exampleFormControlInput1"></label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1"
-                            placeholder="Email@hotmail.com">
+                        <label for="nomeInput">Nome</label>
+                        <input type="text" class="form-control" id="nomeInput"
+                            placeholder="Nome" name="nome" value=" ">
                     </div>
                     <div class="form-group">
-                        <label for="textArea"></label>
-                        <textarea class="form-control" id="textArea" rows="3" style="resize: none; height:275px;"
-                            placeholder="Olá eu gostaria de..."></textarea>
+                        <label for="emailInput">Email</label>
+                        <input type="email" class="form-control" id="emailInput"
+                            placeholder="Seuemail@gmail.com" name="email" value=" ">
                     </div>
-                    <button type="button" class="form-btn">Enviar</button>
+                    <div class="form-group">
+                        <label for="textArea">Mensagem</label>
+                        <textarea class="form-control" id="textArea" rows="3" style="resize: none; height:275px;"
+                            placeholder="Mensagem..." name="mensagem" value=" "></textarea>
+                    </div>
+                    <button type="submit" class="form-btn">Enviar</button>
                 </form>
             </div>
         </section>
