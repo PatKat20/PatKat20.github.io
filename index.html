@@ -5,7 +5,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Primary Meta Tags -->
+    <title>Patrick F.</title>
+    <meta name="title" content="Patrick Fontes">
+    <meta name="description"
+        content="Um website portfólio para me apresentar como desenvolvedor front-end e ganhar visibilidade">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://metatags.io/">
+    <meta property="og:title" content="Patrick Fontes">
+    <meta property="og:description"
+        content="Um website portfólio para me apresentar como desenvolvedor front-end e ganhar visibilidade">
+    <meta property="og:image"
+        content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://metatags.io/">
+    <meta property="twitter:title" content="Patrick Fontes">
+    <meta property="twitter:description"
+        content="Um website portfólio para me apresentar como desenvolvedor front-end e ganhar visibilidade">
+    <meta property="twitter:image"
+        content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+
+
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
     <!-- RESET CSS -->
     <link rel="stylesheet" href="assets/css/normalize.css">
 
@@ -17,16 +43,49 @@
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Patrick F.</title>
+
+    <script>
+        $(document).ready(function () {
+            var divBotao = $('.botaoVoltar');
+            var linkBotao = $('.inicio');
+
+            /* Mostrar botão*/
+
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 70) {
+                    divBotao.fadeIn();
+                } else {
+                    divBotao.fadeOut();
+                }
+
+            });
+
+            /* Clicar e voltar ao topo*/
+
+            divBotao.click(function () {
+
+                $('html,body').animate({ scrollTop: 0 }, 800);
+
+                return false;
+            });
+        });
+    </script>
+
 </head>
 
 <body>
     <header id=" header">
+        <div class="botaoVoltar">
+            <a href="" class="inicio">
+                <ion-icon name="arrow-up-outline"></ion-icon>
+            </a>
+        </div>
         <nav id="header__navigation" class="navbar navbar-expand-lg">
-            <div class="pageTitle">
+            <div class="header__title">
                 <img src="assets//img/Patrick F..svg" alt="Logo Imagem">
             </div>
             <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse"
@@ -73,10 +132,10 @@
     <main id="main">
 
         <section id="hero-section">
-            <img src="assets/img/Rectangle 3.jpg" alt="" class="hero-area-rect">
-            <div class="hero-area-content">
+            <img src="assets/img/Rectangle 3.jpg" alt="" class="hero-area__retangulo">
+            <div class="grid-container">
                 <img src="assets/img/Programming-guy.svg" alt="" class="programming-guy-img">
-                <div class="hero-area-title">
+                <div class="hero-section__area">
                     <h1 id="hero-section__title">Oi,<br> Eu sou <strong> Patrick! </strong></h1>
                     <p>Um desenvolvedor front-end</p>
                     <a href="#contatos" class="hero-btn">Me contate</a>
@@ -86,9 +145,9 @@
 
         <section id="sobre-mim-section">
             <p class="label">sobre mim</p>
-            <div class="sobre-mim-content row">
+            <div class="sobre-mim__content row">
                 <img src="assets/img/boy.svg" alt="" width="496px" class="col-md-6">
-                <p class="sobre-mim-content-text col-md-6 d-flex align-items-center">Olá, meu nome é Patrick e eu sou um
+                <p class="sobre-mim__text col-md-6 d-flex align-items-center">Olá, meu nome é Patrick e eu sou um
                     desenvolvedor front-end.
                     Minhas habilidades estão centralizadas em HTML, CSS, JavaScript e React.js. Atualmente estou
                     cursando Análise e Desenvolvimento de sistemas pela UNIDOMBOSCO, também estou em constante
@@ -100,27 +159,27 @@
         <section id="projects">
             <h3 class="label projects_title">Meus Projetos</h3>
 
-            <div class="card-area-projetos">
-                <div class="card-content">
+            <div class="card-area">
+                <div class="cards">
                     <img src="assets/cards/project.svg" alt="" width="360px">
                     <h4>InDecor Landing page</h4>
                     <p> HTML5, CSS3, CSS Flexbox, Bootstrap</p>
-                    <a href="https://patkat-indecor.herokuapp.com/" class="card-content-button">Veja o Projeto<a>
+                    <a href="https://patkat-indecor.herokuapp.com/" class="card__button">Veja o Projeto<a>
                 </div>
 
-                <div class="card-content">
+                <div class="cards">
                     <img src="assets/cards/Instagram.svg" alt="" width="360px">
                     <h4>Instagram Login Page</h4>
                     <p> HTML5, CSS3, CSS Flexbox </p>
-                    <a href="https://patkat20.github.io/Instagram-loginpage-clone/" class="card-content-button">Veja o
+                    <a href="https://patkat20.github.io/Instagram-loginpage-clone/" class="card__button">Veja o
                         Projeto</a>
                 </div>
 
-                <div class="card-content">
+                <div class="cards">
                     <img src="assets/cards/CRUD.svg" alt="" width="360px">
                     <h4>CRUD - PHP</h4>
                     <p> HTML5, CSS3, Materialize, PHP, MySQL </p>
-                    <a href="" class="card-content-button">Veja o Projeto</a>
+                    <a href="" class="card__button">Veja o Projeto</a>
                 </div>
             </div>
         </section>
@@ -130,15 +189,15 @@
             <p class="label section-tecnologia-label">Tecnologias</p>
             <h3 id="tecnologia_title">Tecnologias que já tive contato</h3>
 
-            <div class="card-area">
-                <img src="assets/cards/HTML.svg" alt="" class="card">
-                <img src="assets/cards/CSS.svg" alt="" class="card">
-                <img src="assets/cards/JavaScript.svg" alt="" class="card">
-                <img src="assets/cards/React.svg" alt="" class="card">
-                <img src="assets/cards/Node.svg" alt="" class="card">
-                <img src="assets/cards/Git.svg" alt="" class="card">
-                <img src="assets/cards/Bootstrap.svg" alt="" class="card">
-                <img src="assets/cards/MySQL.svg" alt="" class="card">
+            <div class="skills-area">
+                <img src="assets/cards/HTML.svg" alt="" class="skill">
+                <img src="assets/cards/CSS.svg" alt="" class="skill">
+                <img src="assets/cards/JavaScript.svg" alt="" class="skill">
+                <img src="assets/cards/React.svg" alt="" class="skill">
+                <img src="assets/cards/Node.svg" alt="" class="skill">
+                <img src="assets/cards/Git.svg" alt="" class="skill">
+                <img src="assets/cards/Bootstrap.svg" alt="" class="skill">
+                <img src="assets/cards/MySQL.svg" alt="" class="skill">
             </div>
         </section>
 
@@ -149,19 +208,18 @@
                 <form action="https://formspree.io/f/xgeqvony" method="POST" class="col-lg-5 col-md-6">
                     <h3 class="form-title">Gostou? então entre em contato</h3>
                     <div class="form-group">
-                        <label for="nomeInput">Nome</label>
-                        <input type="text" class="form-control" id="nomeInput"
-                            placeholder="Nome" name="nome" value=" ">
+                        <label for="nomeInput" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="nomeInput" placeholder="Nome" name="nome">
                     </div>
                     <div class="form-group">
-                        <label for="emailInput">Email</label>
-                        <input type="email" class="form-control" id="emailInput"
-                            placeholder="Seuemail@gmail.com" name="email" value=" ">
+                        <label for="emailInput" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="emailInput" placeholder="Seuemail@gmail.com"
+                            name="email">
                     </div>
                     <div class="form-group">
-                        <label for="textArea">Mensagem</label>
+                        <label for="textArea" class="form-label">Mensagem</label>
                         <textarea class="form-control" id="textArea" rows="3" style="resize: none; height:275px;"
-                            placeholder="Mensagem..." name="mensagem" value=" "></textarea>
+                            placeholder="Mensagem..." name="mensagem"></textarea>
                     </div>
                     <button type="submit" class="form-btn">Enviar</button>
                 </form>
@@ -183,7 +241,7 @@
                 </a>
             </li>
             <li>
-                <a href="https://www.linkedin.com/in/patrick-de-deus-692b87204/">
+                <a href="www.linkedin.com/in/patrick-fontes">
                     <ion-icon name="logo-linkedin" id="linkedin" class="icon"></ion-icon>
                 </a>
             </li>
@@ -196,8 +254,6 @@
     </footer>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
-        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
