@@ -1,3 +1,4 @@
+
 html {
   scroll-behavior: smooth;
 }
@@ -76,33 +77,33 @@ ul {
   margin: auto;
   max-width: 1920px;
   position: relative;
-  padding-top: 0;
+  padding: 0;
 
   .header__title {
     padding: 32px 72px;
   }
-}
 
-#header__navigation a {
-  display: inline-block;
-  padding: 32px 24px;
-}
+  & a{
+    display: inline-block;
+    padding: 32px 24px;
+  }
 
-#header__navigation li {
-  transition: all 0.5s ease-in-out;
-}
+  & li{
+    transition: all 0.5s ease-in-out;
+  }
 
-#header__navigation li:hover {
-  background-color: var(--purple);
-}
+  & li:hover{
+    background-color: var(--purple);
+  }
 
-#header__navigation li:last-child {
-  background-color: var(--purple);
-  font-weight: 700;
-}
+  & li:last-child {
+    background-color: var(--purple);
+    font-weight: 700;
+  }
 
-#header__navigation ul {
-  display: flex;
+  & ul{
+    display: flex;
+  }
 }
 
 /* Hero Section */
@@ -189,16 +190,16 @@ ul {
     color: black;
     margin: 0;
     padding-bottom: 40px;
-  }
 
-  .projects_title::after {
-    content: "";
-    display: block;
-    height: 3px;
-    border-radius: 2px;
-    width: 130px;
-    margin: 15px auto 0;
-    background-color: var(--blackLevelUm);
+    &::after{
+      content: "";
+      display: block;
+      height: 3px;
+      border-radius: 2px;
+      width: 130px;
+      margin: 15px auto 0;
+      background-color: var(--blackLevelUm);
+    }
   }
 
   .card-area {
@@ -220,24 +221,24 @@ ul {
         font-weight: 700;
         margin-top: 40px;
         transition: background 1s;
+
+        &:hover{
+          background: var(--purple);
+        }
       }
 
-      .card__button:hover {
-        background: var(--purple);
+      & h4 {
+        color: rgba(0, 0, 0, 0.8);
+        margin-top: 30px;
       }
-    }
 
-    .cards h4 {
-      color: rgba(0, 0, 0, 0.8);
-      margin-top: 30px;
-    }
-
-    .cards p {
-      text-align: center;
-      font-weight: 700;
-      font-size: 13px;
-      margin-top: 20px;
-      color: rgba(0, 0, 0, 0.4);
+      & p {
+        text-align: center;
+        font-weight: 700;
+        font-size: 13px;
+        margin-top: 20px;
+        color: rgba(0, 0, 0, 0.4);
+      }
     }
   }
 }
@@ -324,11 +325,11 @@ ul {
     .icon {
       font-size: 30px;
     }
-  }
 
-  .icons-list a {
-    padding: 0 5px;
-    margin: 0 5px;
+    & a {
+      padding: 0 5px;
+      margin: 0 5px;
+    }
   }
 
   #instagram {
@@ -346,11 +347,11 @@ ul {
   #twitter {
     color: #1da1f2;
   }
-}
 
-#footer a {
-  color: var(--purple2);
-  font-weight: 700;
+  & a {
+    color: var(--purple2);
+    font-weight: 700;
+  }
 }
 
 /* CSS animation */

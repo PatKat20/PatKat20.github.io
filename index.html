@@ -52,14 +52,18 @@
         $(document).ready(function () {
             var divBotao = $('.botaoVoltar');
             var linkBotao = $('.inicio');
+            var header = $("#header");
+            divBotao.hide()
 
             /* Mostrar botão*/
 
             $(window).scroll(function () {
-                if ($(this).scrollTop() > 70) {
-                    divBotao.fadeIn();
-                } else {
+                if ($(this).scrollTop() === 0) {
                     divBotao.fadeOut();
+                    // header.css({"background-color": "black", "position": "sticky", "top": "0", "left": "0", "z-index": "1", "transition": "all .5s ease"})
+                } else if($(window).scrollTop() > 0){
+                    divBotao.fadeIn();
+                    // header.css({"background-color": "transparent", "position": "static"})
                 }
 
             });
@@ -78,7 +82,7 @@
 </head>
 
 <body>
-    <header id=" header">
+    <header id="header">
         <div class="botaoVoltar">
             <a href="" class="inicio">
                 <ion-icon name="arrow-up-outline"></ion-icon>
@@ -177,9 +181,9 @@
 
                 <div class="cards">
                     <img src="assets/cards/CRUD.svg" alt="" width="360px">
-                    <h4>CRUD - PHP</h4>
-                    <p> HTML5, CSS3, Materialize, PHP, MySQL </p>
-                    <a href="" class="card__button">Veja o Projeto</a>
+                    <h4>Weather App</h4>
+                    <p> HTML5, CSS3, JS Vanilla, OpenWeather API, CountryFlags Api, Unsplash API </p>
+                    <a href="https://patkat20.github.io/WeatherApp/" class="card__button">Veja o Projeto</a>
                 </div>
             </div>
         </section>

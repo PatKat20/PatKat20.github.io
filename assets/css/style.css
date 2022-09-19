@@ -75,30 +75,25 @@ ul {
   margin: auto;
   max-width: 1920px;
   position: relative;
-  padding-top: 0;
+  padding: 0;
 }
 #header__navigation .header__title {
   padding: 32px 72px;
 }
-
 #header__navigation a {
   display: inline-block;
   padding: 32px 24px;
 }
-
 #header__navigation li {
   transition: all 0.5s ease-in-out;
 }
-
 #header__navigation li:hover {
   background-color: var(--purple);
 }
-
 #header__navigation li:last-child {
   background-color: var(--purple);
   font-weight: 700;
 }
-
 #header__navigation ul {
   display: flex;
 }
@@ -309,7 +304,6 @@ ul {
 #footer #twitter {
   color: #1da1f2;
 }
-
 #footer a {
   color: var(--purple2);
   font-weight: 700;
