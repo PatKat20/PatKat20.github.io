@@ -191,6 +191,7 @@ ul {
 #projects .card-area .cards {
   margin-top: 40px;
   text-align: center;
+  width: 33%;
 }
 #projects .card-area .cards .card__button {
   display: inline-block;
